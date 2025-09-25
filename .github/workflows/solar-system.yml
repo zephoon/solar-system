@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@4
+      uses: actions/checkout@v4
 
     - name: Setup NodeJS Version - 18
       uses: actions/setup-node@v3
@@ -22,6 +22,6 @@ jobs:
 
     - name: Install Dependencies
       run: npm install
-      
+
     - name: Unit Testing
       run: npm test
